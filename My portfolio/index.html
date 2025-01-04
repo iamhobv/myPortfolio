@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamed Ehab</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+      integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+   
+    <link rel="stylesheet" href="assets/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="assets/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="toTop">
+      <i class="fa-solid fa-arrow-up p-2"></i>
+    </div>
+    <header class="banner position-relative">
+      <img
+      id="homeImg"
+        src="assets/sigmund-Fa9b57hffnM-unsplash.jpg"
+        class="img-fluid h-100 w-100 object-fit-cover banner-img"
+        alt="..."
+      />
+      <div
+        class="content text-center position-absolute top-50 start-50 translate-middle text-white"
+      >
+        <p class="h2">Welcome,</p>
+        <h2 class="h1">I'm <span class="pri-color">Mohamed</span> Ehab</h2>
+        <p class="h4">Web Developer</p>
+        <p>- Keep it short and simple -</p>
+      </div>
+      <div>
+        <span id="loaderToAbout" class="loader position-absolute start-50 translate-middle"></span>
+      </div>
+    </header>
+    <main>
+      <section id="navBar" class="my-navbar py-2 px-5 shadow-sm">
+        <nav
+          class="navbar navbar-expand-lg d-md-none d-sm-none d-none d-lg-flex d-md-none d-sm-none"
+        >
+          <div class="d-md-flex flex-md-row justify-content-md-evenly w-100">
+            <!-- display: flex !important
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%; -->
+            <a class="navbar-brand" href="#">Mohamed Ehab</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse d-flex justify-content-end gap-1"
+              id="navbarText"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a id="home" class="nav-link active" aria-current="page" href="#!"
+                    >Home</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a id="about" class="nav-link" href="#!">About</a>
+                </li>
+                <li class="nav-item">
+                  <a id="portfolio" class="nav-link" href="#!">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a id="reviews" class="nav-link" href="#!">Reviews</a>
+                </li>
+                <li class="nav-item">
+                  <a id="services" class="nav-link" href="#!">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a id="contact" class="nav-link" href="#!">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <nav class="navbar d-sm-flex d-flex d-md-flex d-lg-none">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mohamed Ehab</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Mohamed Ehab
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a id="home2" class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+ 
+                  <li class="nav-item">
+                    <a id="about2" class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="portfolio2" class="nav-link" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="reviews2" class="nav-link" href="#">Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="services2" class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="contact2" class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <section class="m-3">
+        <div class="container py-2 mt-5 px-sm-3 ">
+          <div class="row">
+            <div class="col-12 mb-4">
+              <p class="sec-color def-text fw-light text-center">Who Am I?</p>
+              <h3 class="pri-color h2 text-center">About</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1 d-none d-sm-none d-md-none d-lg-block"></div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <p>
+                Name:<span class="pri-color">Mohamed Ehab Abd Elhamid</span>
+              </p>
+              <p>Mobile: <span class="pri-color">01010603535</span></p>
+
+              <p>
+                E-mail:
+                <a class="pri-color" href="mailto:mohamedehaab14@gmail.com"
+                  >mohamedehaab14@gmail.com</a
+                >
+              </p>
+              <p>
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/iamhobv/" target="_blank" class="pri-color"
+                  >LinkedIn link</a
+                >
+              </p>
+              <p>
+                GitHub:
+                <a href="https://github.com/iamhobv" target="_blank" class="pri-color"
+                  >GitHub link</a
+                >
+              </p>
+              <p>Address: <span class="pri-color">Cairo,Egypt</span></p>
+            </div>
+            <div class="col-1 d-none d-sm-none d-md-none d-lg-block"></div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <p>
+                I'm Mohamed Ehab, a passionate web developer and a recent
+                graduate with a strong foundation in software engineering
+                principles. Currently, I am a student at the Information
+                Technology Institute, continually advancing my skills and
+                knowledge.
+              </p>
+              <p>
+                I specialize in creating efficient and reliable web applications
+                that push the boundaries of technology.My expertise lies in
+                designing and coding web pages using HTML5, CSS3, JavaScript,
+                Bootstrap, and jQuery.My focus on delivering high-quality code
+                and solutions drives me to continuously improve my skills.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="porSec" class="m-3">
+        <div  class="container py-5 mt-extra">
+          <div class="row">
+            <div class="col-12 mb-4">
+              <p class="sec-color def-text fw-light text-center">What I Did?</p>
+              <h3 class="pri-color h2 text-center">Portfolio</h3>
+            </div>
+          </div>
+          <div class="row justify-content-evenly g-3">
+            <div class="card col-12 col-sm-12 col-md-12 col-lg-3 py-3 projs" >
+              <div class="card-body ">
+                <p class="card-text text-center h5">E-Commerce</p>
+              </div>
+              <img
+                src="assets/img1.png"
+                class="img-card card-img-top object-fit-cover"
+                alt="..."
+              />
+            </div>
+
+            <div class="card col-12 col-sm-12 col-md-12 col-lg-3 py-3 projs" >
+              <div class="card-body ">
+                <p class="card-text text-center h5">Hosto</p>
+              </div>
+              <img
+                src="assets/img2.png"
+                class="img-card card-img-top object-fit-cover"
+                alt="..."
+              />
+            </div>
+
+            <div class="card col-12 col-sm-12 col-md-12 col-lg-3 py-3 projs" >
+              <div class="card-body ">
+                <p class="card-text text-center h5">beIN Sports Clone</p>
+              </div>
+              <img
+                src="assets/img3.png"
+                class="img-card card-img-top object-fit-cover"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div
+            class="row justify-content-center align-content-center align-self-center"
+          >
+            <button
+              class="btn btn-secondary rounded  border-0 mt-5  col-4 col-sm-4 col-md-4   col-lg-2"
+            >
+              See More
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="clientRevSEc" class="m-0">
+        <div class="container py-5 mt-extra">
+          <div class="row">
+            <div class="col-12 mb-4">
+              <p class="sec-color def-text fw-light text-center">
+                What clients say about me?
+              </p>
+              <h3 class="pri-color h2 text-center">Clients Review</h3>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div class="your-class">
+                <div class="client-reviews-card">
+                  <div class="row justify-content-center">
+                    <div
+                      class="col-8 col-sm-8 col-md-6 col-lg-5 mb-4 border border-2 border-secondary-subtle rounded p-2 position-relative client-card"
+                    >
+                      <img
+                        src="assets/oladimeji-odunsi-n5aE6hOY6do-unsplash.jpg"
+                        alt=""
+                        class="position-absolute top-50 start-0 rounded rounded-circle client-img object-fit-cover translate-middle"
+                      />
+                      <div class="client-card-content pt-4 pb-3">
+                        <p class="def-text client-rev-con">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Modi quis, accusantium nostrum expedita maiores
+                          suscipit asperiores excepturi recusandae mollitia
+                          possimus itaque sequi fugit placeat! Est dolor ea
+                          beatae officia odio?
+                        </p>
+                        <p class="h5 pri-color">Ahmed Mohamed</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client-reviews-card">
+                  <div class="row justify-content-center">
+                    <div
+                      class="col-8 col-sm-8 col-md-6 col-lg-5 mb-4 border border-2 border-secondary-subtle rounded p-2 position-relative client-card"
+                    >
+                      <img
+                        src="assets/oladimeji-odunsi-n5aE6hOY6do-unsplash.jpg"
+                        alt=""
+                        class="position-absolute top-50 start-0 rounded rounded-circle client-img object-fit-cover translate-middle"
+                      />
+                      <div class="client-card-content pt-4 pb-3">
+                        <p class="def-text client-rev-con">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Modi quis, accusantium nostrum expedita maiores
+                          suscipit asperiores excepturi recusandae mollitia
+                          possimus itaque sequi fugit placeat! Est dolor ea
+                          beatae officia odio?
+                        </p>
+                        <p class="h5 pri-color">Marawan Mohsen</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client-reviews-card">
+                  <div class="row justify-content-center">
+                    <div
+                      class="col-8 col-sm-8 col-md-6 col-lg-5 mb-4 border border-2 border-secondary-subtle rounded p-2 position-relative client-card"
+                    >
+                      <img
+                        src="assets/oladimeji-odunsi-n5aE6hOY6do-unsplash.jpg"
+                        alt=""
+                        class="position-absolute top-50 start-0 rounded rounded-circle client-img object-fit-cover translate-middle"
+                      />
+                      <div class="client-card-content pt-4 pb-3">
+                        <p class="def-text client-rev-con">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Modi quis, accusantium nostrum expedita maiores
+                          suscipit asperiores excepturi recusandae mollitia
+                          possimus itaque sequi fugit placeat! Est dolor ea
+                          beatae officia odio?
+                        </p>
+                        <p class="h5 pri-color">Afnan Diaa</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+        <section id="skillSEc" class="m-3">
+          <div class="container py-2 mt-extra">
+            <div class="row">
+              <div class="col-12 mb-4">
+                <p class="sec-color def-text fw-light text-center">
+                  What can I do?
+                </p>
+                <h3 class="pri-color h2 text-center">Services & Skills</h3>
+              </div>
+            </div>
+            <div class="row text-center justify-content-center gy-md-4 gy-sm-4">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                <i class="fa-solid fa-laptop-code skill-icon p-4 mb-4"></i>
+                <h4 class="text-dark-emphasis">Web Design</h4>
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                <i class="fa-solid fa-warehouse skill-icon p-4 mb-4"></i>
+                <h4 class="text-dark-emphasis">Web Development</h4>
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                <i class="fa-solid fa-search skill-icon p-4 mb-4"></i>
+                <h4 class="text-dark-emphasis">SEO Optimization</h4>
+              </div>
+              <!-- <div class="col-3">
+                    <i class="fa-solid fa-laptop-code skill-icon p-4 mb-4"></i>
+                    <h4 class="text-dark-emphasis ">Web Design</h4>
+                </div> -->
+            </div>
+            <div class="row mt-5 mb-5 gx-md-5 gy-sm-4">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <p class="m-0">HTML & CSS</p>
+                <div class="progress-bar rounded rounded-5 p-0 ">
+                  <div
+                    class="rounded rounded-5 progress-bar-inside px-3"
+                    style="width: 95%"
+                  >
+                    95%
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <p class="m-0">Bootstrap</p>
+                <div class="progress-bar rounded rounded-5 p-0 ">
+                  <div
+                    class="rounded rounded-5 progress-bar-inside px-3"
+                    style="width: 95%"
+                  >
+                    95%
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <p class="m-0">JS</p>
+                <div class="progress-bar rounded rounded-5 p-0 ">
+                  <div
+                    class="rounded rounded-5 progress-bar-inside px-3"
+                    style="width: 90%"
+                  >
+                    90%
+                  </div>
+              
+            
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <p class="m-0">jQuery</p>
+            <div class="progress-bar rounded rounded-5 p-0 ">
+              <div
+                class="rounded rounded-5 progress-bar-inside px-3"
+                style="width: 80%"
+              >
+                80%
+              </div>
+            </div>
+            </div>
+          </div>
+          
+        </section>
+        <section id="contactSec" class="m-3">
+          <div class="container py-2 mt-extra">
+            <div class="row">
+              <div class="col-12 mb-4">
+                <p class="sec-color def-text fw-light text-center">
+                  How can we communicate?
+                </p>
+                <h3 class="pri-color h2 text-center">Contact Me</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div
+              class="d-flex justify-content-center align-items-center "
+            >
+             <input type="text" placeholder="Name" class="form-control " id="nameField">
+            <div class="mx-2"></div>
+             <input type="text" placeholder="E-mail" class="form-control " id="mailField">
+            </div>
+            <div
+                class="d-flex justify-content-center align-items-center"
+              >
+               <textarea name="" id="mailBody" placeholder="Enter you message" class="form-control mt-4 mb-2" style="min-height: 150px;"></textarea>
+              </div>
+              <div
+                class="d-flex justify-content-center align-items-center g-2"
+              >
+               <button class="btn btn-secondary text-white " id="sendMsg">Send Message</button>
+              </div>
+              
+            </div>
+            
+          
+        </section>
+    </main>
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-extra">
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+          <span class="fs-5">Get connected with me on social networks:</span>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/iamhobv/" target="_blank" class="me-0 me-sm-0 me-md-4 me-lg-4 mx-2 mx-sm-2 ms-md-0 ms-lg-0 link-underline link-underline-opacity-0 text-reset fs-5  ">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://x.com/iamhobv" target="_blank" class="me-0 me-sm-0 me-md-4 me-lg-4 mx-2 mx-sm-2 ms-md-0 ms-lg-0 link-underline link-underline-opacity-0 text-reset fs-5">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/iamhobv/" target="_blank" class="me-0 me-sm-0 me-md-4 me-lg-4  mx-2 mx-sm-2 ms-md-0 ms-lg-0 link-underline link-underline-opacity-0 text-reset fs-5">
+            <i class="fab fa-instagram"></i>
+          </a>
+          
+          </a>
+        </div>
+      </section>
+    
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+ 
+            <div class="col-md-4 col-lg-6 col-xl-4 mx-auto mb-4">
+       
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fa-regular fa-star me-2"></i>Mohamed Ehab
+              </h6>
+              <p>
+                A professional Web Developer
+              </p>
+            </div>
+           
+          
+    
+           
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+            
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="https://www.linkedin.com/in/iamhobv/" target="_blank" class="text-reset">LinkedIn</a>
+              </p>
+              <p>
+                <a href="https://github.com/iamhobv" target="_blank" class="text-reset">GitHub</a>
+              </p>
+              <p>
+                <a href="https://mostaql.com/u/iamhobv" target="_blank" class="text-reset">Mostaql</a>
+              </p>
+              <p>
+                <a href="https://www.upwork.com/freelancers/~0136bff83fb95c95d0" target="_blank" class="text-reset">Upwork</a>
+              </p>
+              <p>
+                <a href="https://khamsat.com/user/iamhobv" target="_blank" class="text-reset">Khamsat</a>
+              </p>
+            </div>
+            
+    
+            
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> Cairo,Egypt</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                mohamedehaab14@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> 01010603535</p>
+              <p><i class="fa-brands fa-square-whatsapp me-3"></i> <a href="	https://wa.me/+201010603535" target="_blank" class="text-reset">01010603535</a></p>
+            </div>
+           
+          </div>
+        
+        </div>
+      </section>
+    
+   
+  
+    </footer>
+    <script src="main.js"></script>
+    <script src="assets/slick-1.8.1/slick/slick.js"></script>
+  </body>
+</html>
